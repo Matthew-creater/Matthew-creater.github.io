@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            建站记录 |
         
         Mattian&#39;s blog
     </title>
@@ -296,7 +296,7 @@ mjx-container[display="true"] + br {
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">Hello World</span>
+                <span class="title-hover-animation">建站记录</span>
             </div>
 
             
@@ -318,16 +318,38 @@ mjx-container[display="true"] + br {
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2023-05-05 13:27:13</span>
-        <span class="mobile">2023-05-05 13:27</span>
+        <span class="pc">2023-05-09 00:30:50</span>
+        <span class="mobile">2023-05-09 00:30</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-05-05 13:27:13</span>
+        <span class="pc">2023-05-09 01:50:31</span>
     </span>
     
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/diary/">diary</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%9A%8F%E8%AE%B0/">随记</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -344,20 +366,40 @@ mjx-container[display="true"] + br {
             <div class="article-content keep-markdown-body">
                 
 
-                <p>Welcome to <a class="link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link" target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a class="link" target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment<i class="fas fa-external-link-alt"></i></a></p>
+                <h1 id="记一次不太成功的建站经历">记一次不太成功的建站经历</h1>
+<p>题主之前一直使用WordPress框架管理自己的网站，但总苦于wordpress繁琐的主题管理与相对死板的布局模式，而且还要自己配置服务器。很久前也是听说过可以白嫖git page的托管服务，不过一直没时间迁站。正好赶上自己的服务器到期，再加上学院很贴心的布置了使用git page + hexo建站的作业，于是趁着这个机会把博客迁到git page上。</p>
+<p>建站的过程还是很容易的，首先在本地<code>hexo init</code>初始化博客目录，确定本地能启动hexo服务后，将其托管到git page上。托管的方式也很简单，就是在github上建一个名为<code>用户名.github.io</code>的仓库，让后把该仓库地址写入<code>_config.yml</code>即可。</p>
+<p>不过我这里遇到了一个小问题（说是小问题，但其实找到问题的原因花了很久）：我的github用户名带有<code>-</code>，属于特殊字符，所以作为域名的时候无法访问，迫不得已我只好改了我的用户名，所以我之前的本地仓库都要重新设置远程仓库地址，唉，啥时候用啥时候说吧。总而言之，最后执行一下<code>hexo d</code>就可以成功部署了。就算拥有了你的博客了，并且还不用自己维护服务器，还是很香的。</p>
+<p>建站的过程很容易，但从发文章这一步开始，事情逐渐麻烦了起来。</p>
+<h2 id="文章页无法正常渲染数学公式">文章页无法正常渲染数学公式</h2>
+<p>我使用的是keep主题，官方文档的建议是使用<strong>hexo-filter-mathjax</strong>插件进行渲染，而非<strong>hexo-mathjax</strong>，但是当我下载好插件也配置了mathjax相关属性后，发现文章中只有in-line形式的公式被渲染了，而正常的公式块却被识别成了斜体。数学公式渲染对于程序猿的博客来说简直是不能出毛病的，所以经过我持之以恒的google后发现有人提出了这样的说法：</p>
+<blockquote>
+<p>hexo默认使用marked.js去解析我们写的markdown，比如一些符号，_代表斜体，会被处理为*标签，比如x_i在开始被渲染的时候，处理为xi，比如__init__会被处理成<strong>init。</strong>*</p>
+</blockquote>
+<p>因此，我选择更换MarkDown默认渲染器为hexo-renderer-pandoc（pandoc是一个标记语言(也可以说排版语言)转换器。可以将一种标记语言(如markdown、textile、tex、latex、html、epub等)转换到另一种标记语言）</p>
+<p>首先要安装Pandoc，再在Hexo站点根目录执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked  <span class="comment"># 删除默认渲染器</span></span><br><span class="line">npm install hexo-renderer-pandoc <span class="comment"># 安装hexo-renderer-pandoc</span></span><br></pre></td></tr></table></figure>
+<p>之后再看数学公式，渲染正常。比如下列文本会被渲染成如图所示的效果。</p>
+<p>L = L_0+L_1L_1 = ^{|D|}<em>{i=1}^{|S_i|}</em>{j=1}BCE(label_{i,j},f(input_i,j))</p>
+<p><img src="https://raw.githubusercontent.com/mattian7/figure/main/img/21.png"></p>
+<h2 id="使用图床显示图片">使用图床显示图片</h2>
+<p>这倒也不算是一个问题吧，但还是记录一下如何使用图床显示图片。其实我第一次知道图床这个东西不是在建站的时候，而是之前用Github的时候发现自己的README总是无法正常显示图片，google之后发现需要使用图床这个东西。而这次建站也遇到了，虽然直接将图片放在<code>source/img</code>下面也可以，但是加载的时候会很慢，最好还是用一个图床，github也能用，一劳永逸。</p>
+<p>我选择使用PicGo+github仓库的方式建图床，把github仓库，token配置好就可以使用了，还是很方便的。具体操作可以参考这篇文章：</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/553533337">2022【保姆级教程】手把手带你使用PicGo+Github搭建自己的免费图床 - 知乎 (zhihu.com)<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="导航栏中的分类及标签页">导航栏中的分类及标签页</h2>
+<p>个人博客肯定少不了导航菜单，而菜单里一般可以直接跳转至主页、分类页、标签页等等。比如像下图这样：</p>
+<p><img src="https://raw.githubusercontent.com/mattian7/figure/main/img/22.png" style="zoom:80%;"></p>
+<p>但是在初始化网站的时候，这些页面是没有的，需要自己生成。比如我想生成一个标签页面，这个页面有所有文章的标签，点击该标签就可以显示所有具有该标签的文章列表，那么我要先使用命令<code>hexo new page "tags"</code>创建一个tags页面，执行完该命令后，你会发现多了一个<code>source/tags</code>文件夹，而里面的index.md就是标签的主页面，而在该index.md的Front-matter中设置<code>type: "tags"</code>后，该页就会自动显示所有标签，还是十分神奇的。</p>
+<p>当然，最后还要去主题下的配置文件中加入menu配置，这样才能在导航栏中显示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  Home: /                         <span class="comment"># 首页</span></span><br><span class="line">  Archives: /archives             <span class="comment"># 归档</span></span><br><span class="line">  <span class="comment"># Tags: /tags                   # 标签</span></span><br><span class="line">  <span class="comment"># Categories: /categories       # 分类</span></span><br><span class="line">  <span class="comment"># Links: /links                 # 链接</span></span><br><span class="line">  <span class="comment"># About: /about                 # 关于</span></span><br></pre></td></tr></table></figure>
+<p>不过我生成categories页面时，不小心首字母大写了，执行了<code>hexo new page "Categories"</code>命令，所以导致生成的文件夹名字页首字母大写，而menu配置中的文件夹名字是小写的，所以点击导航栏中的categories按钮一直显示404。我心想那我就把<code>source/Categories</code>文件夹删了，然后再按正确步骤执行一次就没问题了吧，没想到即便我生成了正确的文件夹、index.md文件，但是访问categories页面时还是显示404。不论我执行了多少次<code>hexo c &amp; hexo g &amp; hexo d</code>，直到一次偶然的机会（一定是老天看不下去了），我打开了<code>.deploy_git</code>文件夹，这里面存着我上一次部署后的所有文件，我发现这里面竟然有<code>Categories</code>文件夹，也就是说，不论我deploy多少次，我一直都在重复部署那个错误的首字母大写的文件夹。虽然不知道为什么它没有部署新的正确的文件夹，但是我把整个.deploy_git文件夹删除后，再<code>hexo c &amp; hexo g &amp; hexo d</code>三连，问题就解决了，真的很无语。</p>
+<p><img src="https://raw.githubusercontent.com/mattian7/figure/main/img/23.png" style="zoom: 67%;"></p>
+<h2 id="部署时网络问题">部署时网络问题</h2>
+<p>最后一个问题是部署时经常遇到以下报错，</p>
+<p><img src="https://raw.githubusercontent.com/mattian7/figure/main/img/24.png" style="zoom:67%;"></p>
+<p>这个一看就是wall的问题，需要等等，<strong>Patience is key in the life</strong>，一开始的时候我clash开全局模式还比较管用，后来就不行了，不过等一下啊也就好了。这没啥办法，不可抗力因素是这样的。</p>
+<h2 id="总结">总结</h2>
+<p>不过总的来说这次建站虽然遇到了不少问题，但是不用买服务器白嫖一个博客还是很香的，而且其实在解决各种问题的过程中也是解决了不少我之前想解决但一直拖延的问题，利是远远大于弊滴。最后也希望自己能把更博客这件事坚持下去吧，真的是一件很有意义的一件事。</p>
 
             </div>
 
@@ -367,16 +409,16 @@ mjx-container[display="true"] + br {
 <div class="article-copyright-info-container">
     <ul class="copyright-info-content">
         <li class="post-title">
-            <span class="type">Post title</span>: <span class="content">Hello World</span>
+            <span class="type">Post title</span>: <span class="content">建站记录</span>
         </li>
         <li class="post-author">
             <span class="type">Post author</span>: <span class="content">Mattian</span>
         </li>
         <li class="post-time">
-            <span class="type">Create time</span>: <span class="content">2023-05-05 13:27:13</span>
+            <span class="type">Create time</span>: <span class="content">2023-05-09 00:30:50</span>
         </li>
         <li class="post-link">
-            <span class="type">Post link</span>: <span class="content">2023/05/05/hello-world/</span>
+            <span class="type">Post link</span>: <span class="content">2023/05/09/建站记录/</span>
         </li>
         <li class="post-license">
             <span class="type">Copyright notice</span>: <span class="content">All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.</span>
@@ -391,25 +433,33 @@ mjx-container[display="true"] + br {
             
 
             
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%9A%8F%E8%AE%B0/">#随记</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
 
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
                                href="/2023/05/07/CoT%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"
                             >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                                <span class="title flex-center">
+                            <span class="title flex-center">
                                 <span class="post-nav-title-item">CoT论文笔记</span>
-                                <span class="post-nav-item">Prev posts</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
                             </span>
                             </a>
                         </div>
-                    
                     
                 </div>
             
